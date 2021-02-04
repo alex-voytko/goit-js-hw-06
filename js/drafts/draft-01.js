@@ -1,8 +1,8 @@
-const numbers = [1, 2, 3, 4, 5, 6, 12, 123]
-const specialNumbers = []
-console.log(numbers)
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 3) {
-        specialNumbers.push(numbers[i])  }
-}
-console.log(specialNumbers)
+import users from "../users.js";
+
+const getUserWithEmail = (users, _email) => 
+  users.find(({email}) => _email === email)
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
+// {объект пользователя Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); 
+// {объект пользователя Elma Head}
