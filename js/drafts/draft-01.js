@@ -1,8 +1,8 @@
 import users from "../users.js";
 
-const getUserWithEmail = (users, _email) => 
-  users.find(({email}) => _email === email)
-console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
-// {объект пользователя Sheree Anthony}
-console.log(getUserWithEmail(users, 'elmahead@omatom.com')); 
-// {объект пользователя Elma Head}
+const getNamesSortedByFriendsCount = users => {
+  
+};
+
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
